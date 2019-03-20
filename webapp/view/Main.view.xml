@@ -10,8 +10,8 @@
 	</Shell>
 </mvc:View>-->
 
-<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+<mvc:View controllerName="sap.ui.demo.CoolApp.controller.Main" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
 	
-	<Text text= "Hello from view" />
+	<Button text="Say hello" press="onSayHello" />
 	
 </mvc:View>
