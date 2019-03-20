@@ -4,9 +4,17 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>CoolApp</title>
-		
+		<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-resourceroots='{"sap.ui.demo.CoolApp": "./"}'
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-oninit="module:sap/ui/demo/CoolApp/index"
+			data-sap-ui-async="true"
+			data-sap-ui-frameOptions="trusted">
+		</script>
 	</head>
-	<body class="sapUiBody">
-		<div>Hello, World !!!!!!!</div>
+	<body class="sapUiBody" id="content">
+		<div>Hello, World From Div !!!!!!!</div>
 	</body>
 </html>

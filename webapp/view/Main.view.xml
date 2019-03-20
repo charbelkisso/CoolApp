@@ -1,4 +1,4 @@
-<mvc:View controllerName="sap.ui.demo.CoolApp.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<!--<mvc:View controllerName="sap.ui.demo.CoolApp.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
@@ -8,4 +8,10 @@
 			</pages>
 		</App>
 	</Shell>
+</mvc:View>-->
+
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+	
+	<Text text= "Hello from view" />
+	
 </mvc:View>
