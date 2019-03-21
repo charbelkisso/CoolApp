@@ -6,15 +6,23 @@
 		<title>CoolApp</title>
 		<script id="sap-ui-bootstrap"
 			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
 			data-sap-ui-theme="sap_belize"
-			data-sap-ui-resourceroots='{"sap.ui.demo.CoolApp": "./"}'
 			data-sap-ui-compatVersion="edge"
-			data-sap-ui-oninit="module:sap/ui/demo/CoolApp/index"
-			data-sap-ui-async="true"
-			data-sap-ui-frameOptions="trusted">
+			data-sap-ui-resourceroots='{"sap.ui.demo.CoolApp": "./"}'>
+		</script>
+		
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "sap.ui.demo.CoolApp"
+					})
+				}).placeAt("content");
+			});
 		</script>
 	</head>
 	<body class="sapUiBody" id="content">
-		<div>Hello, World From Div !!!!!!!</div>
 	</body>
 </html>
